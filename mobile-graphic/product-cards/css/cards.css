@@ -4,17 +4,20 @@
     flex-wrap: wrap;
     align-items: flex-start;
   }
+
   .product {
     width: 32%;
   }
+
+  .product:nth-child(3n + 2) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .product__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
-.product:nth-child(3n + 2) {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.product__footer {
-  display: flex;
-  justify-content: space-between;
-}
